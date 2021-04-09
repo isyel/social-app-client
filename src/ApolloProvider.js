@@ -12,7 +12,7 @@ const setAuthorizationLink = setContext((request, previousContext) => {
 });
 
 const httpLink = createHttpLink({
-	uri: "http://localhost:5000",
+	uri: "https://sleepy-brushlands-11977.herokuapp.com/",
 });
 
 const client = new ApolloClient({
