@@ -7,7 +7,7 @@ import PostForm from "../components/PostForm";
 import { FETCH_POSTS_QUERY } from "../util/graphql";
 
 function Home() {
-	const { loading, error, data } = useQuery(FETCH_POSTS_QUERY);
+	const { loading, data } = useQuery(FETCH_POSTS_QUERY);
 	const { user } = useContext(AuthContext);
 
 	return (
